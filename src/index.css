@@ -1,13 +1,38 @@
+:root {
+	--green-500: #38c97c;
+	--grey-200: #a7aeb4;
+	--grey-400: #8c959d;
+	--grey-800: #596269;
+	--grid-bg: #eef4fa;
+	--info-50: #f1f5fe;
+	--info-500: #276ef1;
+	--info-600: #1e54b7;
+	--neutral-500: #dee1e3;
+	--primary-100: #d9ebf9;
+	--primary-200: #b3d6f3;
+	--primary-500: #4299e1;
+	--text-main: #2e3f51;
+	--text-menu: #5f799c;
+	--white-100: #ffffff;
+	--white-50: #ffffff80;
+}
+
+/* 
+FONT:
+Noto Sans JP 
+https://fonts.google.com/noto/specimen/Noto+Sans+JP
+*/
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
