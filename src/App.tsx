@@ -5,7 +5,7 @@ import AssistantFeature from './pages/AssistantFeature'
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <AssistantFeature />
     </div>
   );

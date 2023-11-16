@@ -1,1 +1,7 @@
-
+.App {
+	display: flex;
+	justify-content: center;
+	padding: 3.75rem 7rem 0 7rem;
+	background-color: var(--grid-bg);
+	min-height: 100vw;
+}

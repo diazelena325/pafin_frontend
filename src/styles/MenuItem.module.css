@@ -1,0 +1,22 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--primary-100);
+	background: var(--white-50);
+}
+
+.heading {
+	color: var(--text-main);
+	font-size: var(--fs-14);
+	font-weight: var(--fw-600);
+	line-height: var(--lh-150);
+}
+
+.description {
+	color: var(--grey-800);
+	font-size: var(--fs-12);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-150);
+}

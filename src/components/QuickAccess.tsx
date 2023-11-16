@@ -1,11 +1,12 @@
 import React from 'react'
 import Menu from './Menu'
+import style from '../styles/QuickAccess.module.css'
 
 function QuickAccess() {
     return (
-        <div>
+        <div className={style.main}>
             {/* Title */}
-            <h6>クイックアクセス</h6>
+            <span className={style.heading}>クイックアクセス</span>
             {/* Menu */}
             <Menu />
         </div>
