@@ -7,6 +7,8 @@
 }
 
 .heading {
+	margin: 0;
+	padding: 0;
 	color: var(--text-menu);
 	font-size: var(--fs-12);
 	font-weight: var(--fw-700);

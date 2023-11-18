@@ -1,16 +1,15 @@
 import React from 'react'
 import Step from './Step'
+import style from '../styles/Container.module.css'
+import HeaderContainer from './ContainerComponents/HeaderContainer'
 
 function Container() {
     return (
-        <div>
-            {/* Icon and Title */}
+        <div className={style.main}>
+            <HeaderContainer />
 
             {/* Description */}
-
-            {/* Progress Bar Icon and Progress text  */}
-
-            {/* expand/collapse button */}
+            <p className={style.description}>仮想通貨の損益計算には過去すべての取引履歴が必要になります。</p>
 
             {/* Steps - Reusable */}
             <Step />

@@ -1,0 +1,26 @@
+/* header container  */
+.headerContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titleContainer {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.icon {
+	color: var(--primary-500);
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	color: var(--text-main);
+	font-size: var(--fs-20);
+	font-weight: var(--fw-600);
+	line-height: var(--lh-130);
+}

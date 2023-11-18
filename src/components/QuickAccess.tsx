@@ -6,7 +6,7 @@ function QuickAccess() {
     return (
         <div className={style.main}>
             {/* Title */}
-            <span className={style.heading}>クイックアクセス</span>
+            <h3 className={style.heading}>クイックアクセス</h3>
             {/* Menu */}
             <Menu />
         </div>

@@ -1,4 +1,5 @@
 .main {
 	width: 84.25%;
-	background-color: red;
+	height: fit-content;
+	gap: 1rem;
 }

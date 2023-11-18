@@ -1,0 +1,121 @@
+.inactive {
+	opacity: 0.4;
+}
+
+.main {
+	display: flex;
+	justify-content: stretch;
+	padding: 1rem;
+	align-items: center;
+	gap: 4.8125rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--neutral-500);
+}
+
+/* Left Div */
+.leftDiv {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.completeIcon {
+	color: var(--green-500);
+}
+
+.pendingIcon {
+	color: var(--grey-200);
+}
+
+/* Middle Div */
+.textDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	color: var(--text-main);
+	font-size: var(--fs-16);
+	font-weight: var(--fw-600);
+	line-height: var(--lh-130);
+}
+
+.badgeDiv {
+	display: flex;
+	width: fit-content;
+	height: 1.25rem;
+	padding: 0 0.5rem;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 0.25rem;
+	background: var(--info-50);
+}
+
+.badge {
+	color: var(--info-600);
+	font-size: var(--fs-12);
+	font-weight: var(--fw-500);
+	line-height: var(--lh-150);
+}
+
+.description {
+	margin: 0;
+	padding: 0;
+	color: var(--grey-800);
+	font-size: var(--fs-14);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-150);
+}
+
+/* info Div */
+.infoDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.infoIcon {
+	color: var(--info-500);
+}
+
+.infoText {
+	color: var(--grey-800);
+	font-size: var(--fs-12);
+	font-weight: var(--fw-400);
+}
+
+/* Right Div */
+.rightDiv {
+	display: flex;
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	height: 2rem;
+	width: 100%;
+	padding: 0.75rem;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 0.25rem;
+	background: var(--primary-500);
+	border: none;
+}
+
+.buttonText {
+	text-wrap: nowrap;
+	color: var(--white-100);
+	text-align: center;
+	font-size: var(--fs-14);
+	font-weight: var(--fw-600);
+	line-height: var(--lh-130);
+}
+
+.buttonIcon {
+	color: var(--white-100);
+}

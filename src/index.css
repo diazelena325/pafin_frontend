@@ -36,6 +36,7 @@
 	--fs-32: 2rem;
 
 	/* line height */
+	--lh-130: 130%;
 	--lh-150: 150%;
 	--lh-200: 200%;
 }
@@ -48,5 +49,9 @@ body {
 }
 
 code {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+button {
 	font-family: 'Noto Sans JP', sans-serif;
 }
