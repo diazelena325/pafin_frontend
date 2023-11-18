@@ -18,3 +18,10 @@
 	font-weight: var(--fw-400);
 	line-height: var(--lh-150);
 }
+
+.headerContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,11 +1,4 @@
 /* header container  */
-.headerContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .titleContainer {
 	display: flex;
 	align-items: center;

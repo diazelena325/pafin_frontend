@@ -1,8 +1,10 @@
 import React from 'react'
 import style from '../styles/Step.module.css'
 import { ArrowRight, CheckCircle, CircleDashed, Info } from '@phosphor-icons/react'
+import { IStep } from '../interfaces/interfaces'
+import { Constants } from '../constants/AssistantFeatureConstants'
 
-function Step() {
+function Step(props: { spData: IStep }) {
     return (
         <div className={style.main}>
             <div className={style.leftDiv}>
@@ -17,28 +19,29 @@ function Step() {
                 <div className={style.textDiv}>
 
                     {/*  Title */}
-                    <h4 className={style.title}>取引所 / ブロックチェーンを選択しましょう</h4>
+                    <h4 className={style.title}>{props.spData.title}</h4>
 
 
                     {/* badge - optional */}
-                    <div className={style.badgeDiv}>
-                        <span className={style.badge}>13 取引所/ブロックチェーン選択済み</span>
-                    </div>
+                    {props.spData.badge && <div className={style.badgeDiv}>
+                        <span className={style.badge}>{props.spData.badge}</span>
+                    </div>}
 
                     {/* Description */}
-                    <p className={style.description}>取引をしたことのある取引所 / ブロックチェーンをすべて選択してください。対応していない取引所や取引所外での取引経験がある場合は「カスタム」を選択してください。</p>
+                    <p className={style.description}>{props.spData.description}</p>
+
                     {/* info text - optional */}
-                    <div className={style.infoDiv}>
+                    {props.spData.info && <div className={style.infoDiv}>
                         <Info size={'1rem'} className={style.infoIcon} />
-                        <span className={style.infoText}>お客様はDeFi 取引が無い為、完了したものとして認識しました。</span>
-                    </div>
+                        <span className={style.infoText}>{props.spData.info}</span>
+                    </div>}
 
                 </div>
             </div>
             {/* Button */}
             <div className={style.rightDiv}>
                 <button className={style.button}>
-                    <span className={style.buttonText}>選択する</span>
+                    <span className={style.buttonText}>{Constants.buttonLabel}</span>
                     <ArrowRight size={'1rem'} weight="bold" className={style.buttonIcon} />
                 </button>
             </div>
