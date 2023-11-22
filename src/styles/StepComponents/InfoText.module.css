@@ -1,0 +1,17 @@
+/* info Div */
+.infoDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.infoIcon {
+	color: var(--info-500);
+}
+
+.infoText {
+	color: var(--grey-800);
+	font-size: var(--fs-12);
+	font-weight: var(--fw-400);
+}

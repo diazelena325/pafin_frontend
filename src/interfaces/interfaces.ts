@@ -8,15 +8,16 @@ export interface IAssistantFeature {
 }
 
 export interface IContainer {
-    id:          string;
+    id:          number;
     icon:        string;
     heading:     string;
     description: string;
+    activeContainer: boolean;
     steps:       IStep[];
 }
 
 export interface IStep {
-    id:          string;
+    id:          number;
     title:       string;
     description: string;
     badge:       string;

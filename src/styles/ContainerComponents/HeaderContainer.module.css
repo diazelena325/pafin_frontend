@@ -1,12 +1,13 @@
 /* header container  */
+.iconContainer {
+	display: flex;
+	align-items: center;
+}
+
 .titleContainer {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-}
-
-.icon {
-	color: var(--primary-500);
 }
 
 .title {

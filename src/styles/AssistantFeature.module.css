@@ -11,3 +11,10 @@
 	margin: 0 0 2rem 0;
 	line-height: 2.625rem;
 }
+
+/* Mobile */
+@media (max-width: 768.99px) {
+	.title {
+		text-align: center;
+	}
+}

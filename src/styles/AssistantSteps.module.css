@@ -5,3 +5,10 @@
 	height: fit-content;
 	gap: 1rem;
 }
+
+/* Tablet and Mobile */
+@media (max-width: 768.99px) {
+	.main {
+		width: 100%;
+	}
+}

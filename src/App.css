@@ -1,7 +1,21 @@
 .App {
 	display: flex;
 	justify-content: center;
-	padding: 3.75rem 7rem 0 7rem;
+	padding: 3.75rem 7rem 1rem 7rem;
 	background-color: var(--grid-bg);
 	min-height: 100vw;
+}
+
+/* Smaller Desktop */
+@media (min-width: 769px) and (max-width: 1120px) {
+	.App {
+		padding: 2.75rem 6rem 1rem 6rem;
+	}
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768.99px) {
+	.App {
+		padding: 2.75rem 2rem 1rem 2rem;
+	}
 }

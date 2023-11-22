@@ -1,0 +1,36 @@
+.button {
+	display: flex;
+	flex-direction: row;
+	height: 2rem;
+	padding: 0.75rem;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 0.25rem;
+	background: var(--primary-500);
+	border: none;
+	cursor: pointer;
+	transition: 0.5s linear;
+}
+
+.buttonText {
+	text-wrap: nowrap;
+	color: var(--white-100);
+	text-align: center;
+	font-size: var(--fs-14);
+	font-weight: var(--fw-600);
+	line-height: var(--lh-130);
+}
+
+.buttonIcon {
+	color: var(--white-100);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+	.button:hover {
+		transition: all 0.5s linear;
+		transform: scale(1.02);
+		box-shadow: 0 1px 1px 1px var(--primary-100);
+	}
+}

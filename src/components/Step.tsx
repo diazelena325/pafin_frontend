@@ -1,21 +1,39 @@
 import React from 'react'
 import style from '../styles/Step.module.css'
-import { ArrowRight, CheckCircle, CircleDashed, Info } from '@phosphor-icons/react'
 import { IStep } from '../interfaces/interfaces'
-import { Constants } from '../constants/AssistantFeatureConstants'
+import InfoText from './StepComponents/InfoText'
+import StatusIcon from './StepComponents/StatusIcon'
+import styled from 'styled-components'
+import SelectButton from './StepComponents/SelectButton'
 
-function Step(props: { spData: IStep }) {
+
+const Main = styled.div<{ $complete: string, $active: string, $activestepcontainer: string }>`
+    display: flex;
+	justify-content: stretch;
+	padding: 1rem;
+	align-items: center;
+	gap: 4.8125rem;
+	border-radius: 0.5rem;
+	border:  ${props => (props.$active === 'true') ? '1px solid var(--primary-500)' : '1px solid var(--neutral-500)'} ;
+	box-shadow: ${props => (props.$active === 'true') ? '0px 0px 4px 0px var(--primary-500)' : 'none'} ;
+    transition: all .5s ease;
+    opacity:  ${props => (props.$activestepcontainer === 'true' || props.$complete === 'true') ? 1 : 0.4} ;
+    
+    
+    @media (max-width: 426px) {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+`;
+
+
+function Step(props: { spData: IStep, updateStepsCompleted: ((id: number) => void), activeStep: boolean }) {
+
     return (
-        <div className={style.main}>
+        <Main className={style.main} $complete={props.spData.complete.toString()} $active={props.spData.active.toString()} $activestepcontainer={props.activeStep.toString()}>
             <div className={style.leftDiv}>
-                <div>
-                    {/* Icon (changes) */}
-                    <CheckCircle size={'1.5rem'} weight="fill" className={style.completeIcon} />
-                    {/* <CircleDashed size={'1.5rem'} className={style.pendingIcon} /> */}
-
-                </div>
-
-
+                <StatusIcon complete={props.spData.complete} />
                 <div className={style.textDiv}>
 
                     {/*  Title */}
@@ -31,21 +49,15 @@ function Step(props: { spData: IStep }) {
                     <p className={style.description}>{props.spData.description}</p>
 
                     {/* info text - optional */}
-                    {props.spData.info && <div className={style.infoDiv}>
-                        <Info size={'1rem'} className={style.infoIcon} />
-                        <span className={style.infoText}>{props.spData.info}</span>
-                    </div>}
+                    {props.spData.info && <div className='style.infoText'><InfoText text={props.spData.info} /></div>}
 
                 </div>
             </div>
             {/* Button */}
-            <div className={style.rightDiv}>
-                <button className={style.button}>
-                    <span className={style.buttonText}>{Constants.buttonLabel}</span>
-                    <ArrowRight size={'1rem'} weight="bold" className={style.buttonIcon} />
-                </button>
+            <div className={style.rightDiv} >
+                <SelectButton id={props.spData.id} updateStepsCompleted={props.updateStepsCompleted} enabledStatus={props.activeStep} />
             </div>
-        </div>
+        </Main >
     )
 }
 

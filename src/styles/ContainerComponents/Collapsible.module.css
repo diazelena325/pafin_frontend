@@ -1,0 +1,17 @@
+.button {
+	border: none;
+	background: none;
+}
+.downicon {
+	cursor: pointer;
+	color: var(--grey-400);
+	transform: rotate(360deg);
+	transition: all 0.4s linear;
+}
+
+.upicon {
+	cursor: pointer;
+	color: var(--grey-400);
+	transition: all 0.4s linear;
+	transform: rotate(180deg);
+}

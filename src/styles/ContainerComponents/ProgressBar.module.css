@@ -7,7 +7,7 @@
 
 .fillerStyles {
 	height: 100%;
-	width: 50%;
+	width: var(--completed);
 	background-color: var(--green-500);
 	border-radius: inherit;
 }

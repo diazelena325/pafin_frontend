@@ -1,31 +1,9 @@
-.inactive {
-	opacity: 0.4;
-}
-
-.main {
-	display: flex;
-	justify-content: stretch;
-	padding: 1rem;
-	align-items: center;
-	gap: 4.8125rem;
-	border-radius: 0.5rem;
-	border: 1px solid var(--neutral-500);
-}
-
 /* Left Div */
 .leftDiv {
 	display: flex;
 	flex-direction: row;
 	gap: 0.5rem;
 	width: 80%;
-}
-
-.completeIcon {
-	color: var(--green-500);
-}
-
-.pendingIcon {
-	color: var(--grey-200);
 }
 
 /* Middle Div */
@@ -71,54 +49,29 @@
 	line-height: var(--lh-150);
 }
 
-/* info Div */
-.infoDiv {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 0.25rem;
-}
-
-.infoIcon {
-	color: var(--info-500);
-}
-
-.infoText {
-	color: var(--grey-800);
-	font-size: var(--fs-12);
-	font-weight: var(--fw-400);
+.main.infoText {
+	opacity: 1;
 }
 
 /* Right Div */
 .rightDiv {
 	display: flex;
 	width: 20%;
-	justify-content: end;
+	justify-content: flex-end;
 }
 
-.button {
-	display: flex;
-	flex-direction: row;
-	height: 2rem;
-
-	padding: 0.75rem;
-	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
-	border-radius: 0.25rem;
-	background: var(--primary-500);
-	border: none;
+@media (max-width: 426px) {
+	.leftDiv {
+		width: 100%;
+	}
+	.rightDiv {
+		width: 100%;
+		justify-content: center;
+	}
 }
 
-.buttonText {
-	text-wrap: nowrap;
-	color: var(--white-100);
-	text-align: center;
-	font-size: var(--fs-14);
-	font-weight: var(--fw-600);
-	line-height: var(--lh-130);
-}
-
-.buttonIcon {
-	color: var(--white-100);
+@media (max-width: 320px) {
+	.badgeDiv {
+		padding: 0.5rem;
+	}
 }

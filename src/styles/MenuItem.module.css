@@ -5,6 +5,17 @@
 	border-radius: 0.5rem;
 	border: 1px solid var(--primary-100);
 	background: var(--white-50);
+	cursor: pointer;
+	transition: all 0.5s linear;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+	.main:hover {
+		transition: all 0.5s linear;
+		transform: scale(1.02);
+		box-shadow: 0 1px 1px 1px var(--primary-100);
+	}
 }
 
 .heading {
@@ -19,4 +30,5 @@
 	font-size: var(--fs-12);
 	font-weight: var(--fw-400);
 	line-height: var(--lh-150);
+	word-wrap: normal;
 }
