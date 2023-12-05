@@ -1,4 +1,4 @@
-# React TypeScript Assignment
+# Frontend implementation of Figma Design
 
 This repository contains the integration of a provided Figma mockup into interactive React components using TypeScript, styled components, and vanilla css. Text and data for the application are supplied by a local JSON file. View [Demo](https://pafinfe-ediaz.netlify.app).
 
